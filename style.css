@@ -1,0 +1,32 @@
+body{
+    margin : 0;
+    height : 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+span{
+    background: url("https://cdn2.iconfinder.com/data/icons/education-1462/512/Polymer_particles_nanotechnology_particle_structure_atom_nano_education-1024.png");
+    color: transparent;
+    width : 100px;
+    height : 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 1;
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -2000%) rotate(360deg);
+        opacity:0;
+        filter:hue-rotate(600deg);
+    }
+    
+}
